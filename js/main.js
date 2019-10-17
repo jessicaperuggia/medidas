@@ -4,23 +4,14 @@ botaoAdicionar.addEventListener("click", function(event){
 
     var form = document.querySelector("#form-adiciona");
     var usuario = obtemUsuarioDoFormulario(form);
-    var erros = validaUsuario(usuario);
-
-    if (erros.length > 0){
-        exibeMenssagemDeErro(erros);
-        return;
-    }
-    adicionarUsuarioNaTabela(usuario);
+   
     
-    form.reset();
-
-    var menssagensErro = document.querySelector("#menssagens-erro");
-    menssagensErro.innerHTML = "";
 
 });
 
 function obtemUsuarioDoFormulario(form){
     var usuario ={
+        data: form.date.value,
         nome: form.nome.value,
         peso: form.peso.value,
         cintura: form.cintura.value,
@@ -37,6 +28,7 @@ function montarTr(usuario){
     var usuarioTr = document.createElement("tr");
     usuarioTr.classList.add("usuario");
 
+    usuarioTr.appendChild(montarTd(usuario.data, "info-data"));
     usuarioTr.appendChild(montarTd(usuario.nome, "info-nome"));
     usuarioTr.appendChild(montarTd(usuario.peso, "info-peso"));
     usuarioTr.appendChild(montarTd(usuario.cintura, "info-cintura"));
@@ -44,6 +36,7 @@ function montarTr(usuario){
     usuarioTr.appendChild(montarTd(usuario.busto, "info-busto"));
     usuarioTr.appendChild(montarTd(usuario.biceps, "info-biceps"));
     usuarioTr.appendChild(montarTd(usuario.coxa, "info-coxa"));
+   
 
     return usuarioTr;
 }

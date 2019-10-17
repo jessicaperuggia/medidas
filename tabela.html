@@ -35,38 +35,40 @@
                 <tr class="usuario">
                     <td class="info-data" rowspan="2">25/02/2019</td> 
                     <td class="info-nome">Jéssica</td>
-                    <td class="info-peso">Peso</td>
-                    <td class="info-cintura">Cintura</td>
-                    <td class="info-quadril">Quadril</td>
-                    <td class="info-busto">Busto</td>
-                    <td class="info-busto">Bíceps</td>
-                    <td class="info-coxa">Coxa</td>
+                    <td class="info-peso">73.7</td>
+                    <td class="info-cintura">101</td>
+                    <td class="info-quadril">107</td>
+                    <td class="info-busto">102</td>
+                    <td class="info-busto">31</td>
+                    <td class="info-coxa">64</td>
                 </tr>
                 <tr class="usuario">
                     <td class="nome">Geovani</td>
-                    <td class="info-peso">Peso</td>
-                    <td class="info-cintura">Cintura</td>
-                    <td class="info-quadril">Quadril</td>
-                    <td class="info-busto">Busto</td>
-                    <td class="info-busto">Bíceps</td>
-                    <td class="info-coxa">Coxa</td>
+                    <td class="info-peso">119.3</td>
+                    <td class="info-cintura">131</td>
+                    <td class="info-quadril">130</td>
+                    <td class="info-busto">122</td>
+                    <td class="info-busto">39</td>
+                    <td class="info-coxa">82</td>
                 </tr>                    
             </tbody>
         </table>
 
     </main>
     <section class="container">
-			<h2 id="titulo-form">Adicionar novo usuário</h2>
+			<h2 id="titulo-form">Comparando os dados</h2>
 			<ul id="mensagens-erro"></ul>
 			<form id="form-adiciona">
                 <div class="grupo">
 					<label for="data">Data:</label>
-					<input id="data" name="data" type="text" placeholder="digite a data" class="campo">
-				</div>
+					<input id="date" name="data" type="date" rowspan="2" class="campo">
+                </div>
+                <h3>Seus Dados</h3>
                 <div class="grupo">
 					<label for="nome">Nome:</label>
 					<input id="nome" name="nome" type="text" placeholder="digite o seu nome" class="campo">
-				</div>
+                </div>
+                
 				<div class="grupo">
 					<label for="peso">Peso:</label>
 					<input id="peso" name="peso" type="text" placeholder="digite o seu peso" class="campo campo-medio">
@@ -92,11 +94,44 @@
                         <label for="coxa">Coxa:</label>
                         <input id="coxa" type="text" placeholder="digite a medida da sua coxa" class="campo campo-medio">
                 </div>
+                <h3>Dados para comparar</h3>
+                <div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o seu nome" class="campo">
+                </div>
+                
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="digite o seu peso" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="cintura">Cintura:</label>
+					<input id="cintura" name="cintura" type="text" placeholder="digite a medida da sua cintura" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="quadril">Quadril:</label>
+					<input id="quadril" type="text" placeholder="digite a medida do seu quadril" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                        <label for="busto">Busto:</label>
+                        <input id="busto" type="text" placeholder="digite a medida do seu busto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="biceps">Bíceps:</label>
+                    <input id="biceps" type="text" placeholder="digite a medida do seu bíceps" class="campo campo-medio">
+                </div>
+
+                <div class="grupo">
+                        <label for="coxa">Coxa:</label>
+                        <input id="coxa" type="text" placeholder="digite a medida da sua coxa" class="campo campo-medio">
+                </div>
+                
 
 		
 				<button id="adicionar-usuario" class="botao bto-principal">Adicionar</button>
 			</form>
-		</section>
+        </section>
+        
 
     <script src="js/main.js"></script>
     <script src="js/valida.js"></script>
