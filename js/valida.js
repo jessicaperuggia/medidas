@@ -22,7 +22,7 @@ function validaUsuario(usuario){
     if (usuario.coxa.length == 0){
         erros.push("A coxa não pode ser em branco");
     }
-
+   
     return erros;
 
 }

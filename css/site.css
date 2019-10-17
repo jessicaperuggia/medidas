@@ -40,7 +40,7 @@ section{
 	overflow: hidden;
 }
 
-section h2{
+section h2 {
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
@@ -48,6 +48,11 @@ section h2{
 	margin-bottom: .5em;
 }
 
+h3{
+	font-size: 2em;
+	color: #80597E;
+
+}
 table{
 	width: 100%;
 	margin-bottom : .10em;
