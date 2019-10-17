@@ -1,0 +1,125 @@
+body{
+	font-family: "Merriweather", serif;
+	font-size: 14px;
+	background-color: #FFE8F6;
+}
+header{
+	background-color: #402D3F;
+	height: 5em;
+	color: #FFB3FC;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 3.5em;
+	display:inline-block;
+	vertical-align:	middle;
+	text-align: center;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .10em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 3px solid #E6A1E3;
+	text-align: center;
+	color: #FFB3FC;
+	background-color: #80597E;
+}
+
+th{
+	font-weight: bold;
+}
+
+.info-data {
+	text-align: center;
+	vertical-align:	middle;
+}
+campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #E6A1E3;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 35%;
+	display: inline-block;
+	padding: 10px 0px;
+	
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#80597E;
+	border-color: #E6A1E3;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: #80597E;
+	border-color: #E6A1E3;
+
+}
+#titulo-form{
+	color: #80597E; 
+}

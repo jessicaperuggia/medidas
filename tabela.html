@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela</title>
+    <link rel="icon" href="imagens/medida.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo">Diminuindo as Medidas</h1>
+        </div>
+    </header>
+	<main>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color: #E6A1E3">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Nomes</th>
+                    <th>Peso</th>
+                    <th>Cintura</th>
+                    <th>Quadril</th>
+                    <th>Busto</th>
+                    <th>Bíceps</th>
+                    <th>Coxa</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-usuarios">
+                <tr class="usuario">
+                    <td class="info-data" rowspan="2">25/02/2019</td> 
+                    <td class="info-nome">Jéssica</td>
+                    <td class="info-peso">Peso</td>
+                    <td class="info-cintura">Cintura</td>
+                    <td class="info-quadril">Quadril</td>
+                    <td class="info-busto">Busto</td>
+                    <td class="info-busto">Bíceps</td>
+                    <td class="info-coxa">Coxa</td>
+                </tr>
+                <tr class="usuario">
+                    <td class="nome">Geovani</td>
+                    <td class="info-peso">Peso</td>
+                    <td class="info-cintura">Cintura</td>
+                    <td class="info-quadril">Quadril</td>
+                    <td class="info-busto">Busto</td>
+                    <td class="info-busto">Bíceps</td>
+                    <td class="info-coxa">Coxa</td>
+                </tr>                    
+            </tbody>
+        </table>
+
+    </main>
+    <section class="container">
+			<h2 id="titulo-form">Adicionar novo usuário</h2>
+			<ul id="mensagens-erro"></ul>
+			<form id="form-adiciona">
+                <div class="grupo">
+					<label for="data">Data:</label>
+					<input id="data" name="data" type="text" placeholder="digite a data" class="campo">
+				</div>
+                <div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o seu nome" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="digite o seu peso" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="cintura">Cintura:</label>
+					<input id="cintura" name="cintura" type="text" placeholder="digite a medida da sua cintura" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="quadril">Quadril:</label>
+					<input id="quadril" type="text" placeholder="digite a medida do seu quadril" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                        <label for="busto">Busto:</label>
+                        <input id="busto" type="text" placeholder="digite a medida do seu busto" class="campo campo-medio">
+                </div>
+                <div class="grupo">
+                    <label for="biceps">Bíceps:</label>
+                    <input id="biceps" type="text" placeholder="digite a medida do seu bíceps" class="campo campo-medio">
+                </div>
+
+                <div class="grupo">
+                        <label for="coxa">Coxa:</label>
+                        <input id="coxa" type="text" placeholder="digite a medida da sua coxa" class="campo campo-medio">
+                </div>
+
+		
+				<button id="adicionar-usuario" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
