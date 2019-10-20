@@ -4,8 +4,18 @@ botaoAdicionar.addEventListener("click", function(event){
 
     var form = document.querySelector("#form-adiciona");
     var usuario = obtemUsuarioDoFormulario(form);
-   
-    
+    var erros = validaUsuario(usuario);
+
+    if (erros.length > 0) {
+        exibeMenssagemDeErro(erros);
+        return;
+    }
+
+    adicionarUsuarioNaTabela(usuario);
+
+    form.reset();
+
+     removeUsuario(usuario); 
 
 });
 
@@ -63,5 +73,18 @@ function exibeMenssagemDeErro(erros){
         var li = document.createElement("li");
         li.textContent = erro;
         ul.appendChild(li);
+    });
+}
+
+function removeUsuario(usuaio){
+    var usuario = document.querySelectorAll(".usuario");
+    var tabela = document.querySelector("#tabela-usuarios");
+
+    tabela.addEventListener("dbclick", function(event){
+        event.target.parentNode.classList.add("fadeOut");
+
+        setTimeout(function(){
+            event.target.parentNode.remove();
+        }, 500);
     });
 }
